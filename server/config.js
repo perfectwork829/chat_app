@@ -6,7 +6,7 @@ module.exports = {
     origin: ['http://localhost:3000'],
   },
   db: {
-    uri: process.env.MONGO_URI,
+    uri: 'mongodb+srv://superdev829:tyh9t2JjdBsDGbdB@cluster0.mi39ol5.mongodb.net/',
     name: 'lechat',
   },
 };
