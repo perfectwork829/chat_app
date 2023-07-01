@@ -19,7 +19,7 @@ function Auth() {
           className="w-full h-full justify-center basis-3/5"
           style={{ backgroundImage: `url(${myImage})` }}
         ></div>
-        <div className="sm:p-6 rounded-md bg-white basis-2/5">
+        <div className="p-6 rounded-md bg-white basis-2/5">
           {/* header */}
           <div className="mb-4">
             <h1 className="text-2xl font-bold">
