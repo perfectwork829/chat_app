@@ -21,21 +21,21 @@ function Header({ setSearch }) {
           {[
             {
               target: 'refresh-inbox',
-              icon: <bi.BiRotateRight />,
+              icon: <bi.BiSearchAlt2 />,
               action() {
                 dispatch(setRefreshInbox(uuidv4()));
               },
             },
             {
               target: 'contact',
-              icon: <bi.BiMessageSquareDots />,
+              icon: <bi.BiMessageAdd />,
               action() {
                 dispatch(setPage({ target: 'contact' }));
               },
             },
             {
               target: 'minibox',
-              icon: <bi.BiDotsVerticalRounded />,
+              icon: <bi.BiMenu />,
               action(e) {
                 e.stopPropagation();
                 dispatch(setModal({ target: 'minibox' }));

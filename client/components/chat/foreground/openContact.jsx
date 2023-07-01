@@ -1,7 +1,8 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import * as ri from 'react-icons/ri';
+// import * as ri from 'react-icons/ri';
 import { setPage } from '../../../redux/features/page';
+import contactImg from '../../../public/assets/images/contact-btn.png';
 
 function OpenContact() {
   const dispatch = useDispatch();
@@ -24,17 +25,15 @@ function OpenContact() {
       type="button"
       className={`
         ${somePageIsOpened && 'scale-0 opacity-0'}
-        transition absolute z-10 bottom-0 right-0 -translate-x-6 -translate-y-6
-        w-16 h-16 rounded-full flex justify-center items-center shadow-xl text-white bg-sky-600
+        transition absolute z-10 bottom-0 right-0 -translate-x-6 -translate-y-6 bg-spill-200
+        w-10 h-10 rounded-full flex justify-center items-center shadow-xl text-white 
         hover:brightness-110
       `}
       onClick={() => {
         dispatch(setPage({ target: 'contact' }));
       }}
     >
-      <i>
-        <ri.RiMessage3Fill size={28} />
-      </i>
+      <img src={contactImg} alt="contact image" className='rounded-3xl'/>
     </button>
   );
 }

@@ -1,0 +1,33 @@
+.custom-bg-sign{  
+  background-repeat: no-repeat;
+  
+  flex-flow: column;
+}
+.inner-sign-form{
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 870px;
+
+}
+@media (max-width: 773px) {
+  .inner-sign-form{
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .inner-sign-form{
+    width: 100%;
+    flex-flow: column;
+  }
+  .inner-sign-form > div{
+    min-height: 100%;
+    background-position: center center;  
+    background-size: cover;
+  }
+  .custom-bg-sign{
+    justify-content: flex-start; 
+    padding-top: 50px;
+  }
+}
